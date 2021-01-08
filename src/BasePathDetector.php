@@ -80,26 +80,7 @@ class BasePathDetector
         if (!isset($server['REQUEST_URI'])) {
             return '';
         }
-
-        $scriptName = $server['SCRIPT_NAME'];
-
-        $basePath = (string)parse_url($server['REQUEST_URI'], PHP_URL_PATH);
-        $scriptName = str_replace('\\', '/', dirname(dirname($scriptName)));
-	$basePath = ((substr($basePath, -1) === '/') ? substr($basePath, 0, -1) : $basePath);
-
-        if (($scriptName === '/') && ($basePath === '/')) {
-            return '';
-        }
-
-        $length = strlen($scriptName);
-        if ($length > 0 && $scriptName !== '/') {
-            $basePath = substr($basePath, 0, $length);
-        }
-
-        if (strlen($basePath) > 1) {
-            return $basePath;
-        }
-
-        return '';
+		
+		return dirname($server['SCRIPT_NAME']);
     }
 }
