@@ -1,5 +1,5 @@
 {
-    "name": "selective/basepath",
+    "name": "brainstormdevel/basepath",
     "type": "library",
     "description": "A URL base path detector for Slim 4",
     "keywords": [
@@ -7,7 +7,7 @@
         "slim",
         "slim4"
     ],
-    "homepage": "https://github.com/selective-php/basepath",
+    "homepage": "https://github.com/BrainStormDevel/basepath",
     "license": "MIT",
     "require": {
         "php": "^7.2 || ^8.0",
@@ -41,12 +41,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Selective\\BasePath\\": "src/"
+            "BrainStormDevel\\BasePath\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Selective\\BasePath\\Test\\": "tests/"
+            "BrainStormDevel\\BasePath\\Test\\": "tests/"
         }
     },
     "config": {
