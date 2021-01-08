@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainStormDevel\BasePath;
+namespace BrainStorm\BasePath;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

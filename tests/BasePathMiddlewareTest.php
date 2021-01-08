@@ -1,11 +1,11 @@
 <?php
 
-namespace BrainStormDevel\BasePath\Test;
+namespace BrainStorm\BasePath\Test;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\UriInterface;
-use BrainStormDevel\BasePath\BasePathMiddleware;
+use BrainStorm\BasePath\BasePathMiddleware;
 use Slim\Factory\AppFactory;
 use Slim\Psr7\Factory\ServerRequestFactory;
 

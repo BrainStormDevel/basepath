@@ -1,9 +1,9 @@
 <?php
 
-namespace BrainStormDevel\BasePath\Test;
+namespace BrainStorm\BasePath\Test;
 
 use PHPUnit\Framework\TestCase;
-use BrainStormDevel\BasePath\BasePathDetector;
+use BrainStorm\BasePath\BasePathDetector;
 
 /**
  * Test.

@@ -41,12 +41,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrainStormDevel\\BasePath\\": "src/"
+            "BrainStorm\\BasePath\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrainStormDevel\\BasePath\\Test\\": "tests/"
+            "BrainStorm\\BasePath\\Test\\": "tests/"
         }
     },
     "config": {
