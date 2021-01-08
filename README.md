@@ -2,12 +2,12 @@
 
 A URL base path detector for Slim 4.
 
-[![Latest Version on Packagist](https://img.shields.io/github/release/selective-php/basepath.svg)](https://packagist.org/packages/selective/basepath)
+[![Latest Version on Packagist](https://img.shields.io/github/release/brainstormdevel/basepath.svg)](https://packagist.org/packages/brainstormdevel/basepath)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
-[![Build Status](https://github.com/selective-php/basepath/workflows/build/badge.svg)](https://github.com/selective-php/basepath/actions)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/selective-php/basepath.svg)](https://scrutinizer-ci.com/g/selective-php/basepath/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/quality/g/selective-php/basepath.svg)](https://scrutinizer-ci.com/g/selective-php/basepath/?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/selective/basepath.svg)](https://packagist.org/packages/selective/basepath/stats)
+[![Build Status](https://github.com/brainstormdevel/basepath/workflows/build/badge.svg)](https://github.com/brainstormdevel/basepath/actions)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/brainstormdevel/basepath.svg)](https://scrutinizer-ci.com/g/brainstormdevel/basepath/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/quality/g/brainstormdevel/basepath.svg)](https://scrutinizer-ci.com/g/brainstormdevel/basepath/?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/brainstormdevel/basepath.svg)](https://packagist.org/packages/brainstormdevel/basepath/stats)
 
 
 ## Features
@@ -29,7 +29,7 @@ A URL base path detector for Slim 4.
 ## Installation
 
 ```
-composer require selective/basepath
+composer require brainstormdevel/basepath
 ```
 
 The recommended **directory structure**: 
@@ -80,7 +80,7 @@ Example: `public/index.php`
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
-use Selective\BasePath\BasePathMiddleware;
+use BrainStorm\BasePath\BasePathMiddleware;
 use Slim\Factory\AppFactory;
 
 require_once __DIR__ . '/../vendor/autoload.php';
