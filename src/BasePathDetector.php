@@ -1,6 +1,6 @@
 <?php
 
-namespace Selective\BasePath;
+namespace BrainStormDevel\BasePath;
 
 /**
  * A URL base path detector.
