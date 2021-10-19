@@ -47,7 +47,7 @@ final class BasePathMiddleware implements MiddlewareInterface
     {
         $detector = new BasePathDetector($request->getServerParams(), $this->phpSapi);
 
-        $this->app->setBasePath($detector->getBasePath());
+        this->app->setBasePath(((substr($detector->getBasePath(), -1) == '/') ? substr($detector->getBasePath(), 0, -1) : $detector->getBasePath()));
 
         return $handler->handle($request);
     }
