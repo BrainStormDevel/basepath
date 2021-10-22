@@ -2,10 +2,10 @@
 
 namespace BrainStorm\BasePath\Test;
 
+use BrainStorm\BasePath\BasePathMiddleware;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\UriInterface;
-use BrainStorm\BasePath\BasePathMiddleware;
 use Slim\Factory\AppFactory;
 use Slim\Psr7\Factory\ServerRequestFactory;
 
@@ -65,9 +65,9 @@ class BasePathMiddlewareTest extends TestCase
     /**
      * Create a server request.
      *
-     * @param string $method The HTTP method
-     * @param string|UriInterface $uri The URI
-     * @param array<mixed> $serverParams The server parameters
+     * @param string              $method       The HTTP method
+     * @param string|UriInterface $uri          The URI
+     * @param array<mixed>        $serverParams The server parameters
      *
      * @return ServerRequestInterface The request
      */

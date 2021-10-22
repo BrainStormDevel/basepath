@@ -20,8 +20,8 @@ class BasePathDetector
     /**
      * The constructor.
      *
-     * @param array<mixed> $server The SERVER data to use
-     * @param string|null $phpSapi The PHP_SAPI value
+     * @param array<mixed> $server  The SERVER data to use
+     * @param string|null  $phpSapi The PHP_SAPI value
      */
     public function __construct(array $server, string $phpSapi = null)
     {
@@ -80,7 +80,7 @@ class BasePathDetector
         if (!isset($server['REQUEST_URI'])) {
             return '';
         }
-		
-		return dirname($server['SCRIPT_NAME']);
+
+        return dirname($server['SCRIPT_NAME']);
     }
 }

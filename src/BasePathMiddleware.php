@@ -26,7 +26,7 @@ final class BasePathMiddleware implements MiddlewareInterface
     /**
      * The constructor.
      *
-     * @param App $app The slim app
+     * @param App         $app     The slim app
      * @param string|null $phpSapi The PHP_SAPI value
      */
     public function __construct(App $app, string $phpSapi = null)
@@ -38,7 +38,7 @@ final class BasePathMiddleware implements MiddlewareInterface
     /**
      * Invoke middleware.
      *
-     * @param ServerRequestInterface $request The request
+     * @param ServerRequestInterface  $request The request
      * @param RequestHandlerInterface $handler The handler
      *
      * @return ResponseInterface The response
