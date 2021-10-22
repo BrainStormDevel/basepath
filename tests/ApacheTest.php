@@ -2,8 +2,8 @@
 
 namespace BrainStorm\BasePath\Test;
 
-use PHPUnit\Framework\TestCase;
 use BrainStorm\BasePath\BasePathDetector;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Test.
@@ -21,15 +21,15 @@ class ApacheTest extends TestCase
     protected function setUp(): void
     {
         $this->server = [
-            'REQUEST_METHOD' => 'GET',
-            'REQUEST_SCHEME' => 'http',
-            'HTTP_HOST' => 'localhost',
-            'SERVER_PORT' => '80',
-            'REQUEST_URI' => '/',
-            'SERVER_PROTOCOL' => 'HTTP/1.1',
-            'SCRIPT_NAME' => '',
+            'REQUEST_METHOD'     => 'GET',
+            'REQUEST_SCHEME'     => 'http',
+            'HTTP_HOST'          => 'localhost',
+            'SERVER_PORT'        => '80',
+            'REQUEST_URI'        => '/',
+            'SERVER_PROTOCOL'    => 'HTTP/1.1',
+            'SCRIPT_NAME'        => '',
             'REQUEST_TIME_FLOAT' => microtime(true),
-            'REQUEST_TIME' => microtime(),
+            'REQUEST_TIME'       => microtime(),
         ];
     }
 
