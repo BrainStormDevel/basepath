@@ -37,7 +37,7 @@ class BasePathDetector
     public function getBasePath(): string
     {
         // For apache
-        if ($this->phpSapi === 'apache2handler') {
+        if ($this->phpSapi === 'apache2handler' || $this->phpSapi === 'fpm-fcgi') {
             return $this->getBasePathFromApache($this->server);
         }
 
