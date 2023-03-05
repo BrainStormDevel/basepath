@@ -79,7 +79,7 @@ class BasePathDetector
         $scriptName = $server['SCRIPT_NAME'];
 
         $basePath = (string)parse_url($server['REQUEST_URI'], PHP_URL_PATH);
-        $scriptName = str_replace('\\', '/', dirname($scriptName, 2));
+        $scriptName = str_replace('\\', '/', dirname($scriptName));
 
         if ($scriptName === '/') {
             return '';
