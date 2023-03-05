@@ -82,7 +82,7 @@ class BasePathDetector
         $scriptName = str_replace('\\', '/', dirname($scriptName, 2));
 
         if ($scriptName === '/') {
-            return '/';
+            return '';
         }
 
         $length = strlen($scriptName);
